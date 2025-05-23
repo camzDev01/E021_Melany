@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Marimba Chapina</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfaf5;
+            color: #333;
+        }
+
+        header {
+            background-image: url('https://casadedios.org/wp-content/uploads/2021/05/banners-marimbas.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        header p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .enlaces {
+            margin-top: 30px;
+        }
+
+        .enlaces a {
+            display: inline-block;
+            margin-right: 20px;
+            color: #8B4513; /* SaddleBrown */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .enlaces a:hover {
+            text-decoration: underline;
+        }
+
+        .formulario {
+            background-color: #fff3e6; /* Light peach */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+
+        .formulario h2 {
+            margin-bottom: 15px;
+            color: #5C4033; /* Darker brown for heading */
+        }
+
+        .formulario label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .formulario input[type="text"],
+        .formulario input[type="email"] {
+            width: calc(100% - 22px); /* Account for padding and border */
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        .formulario input:focus {
+            border-color: #8B4513;
+            outline: none;
+        }
+
+        .formulario button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #8B4513; /* SaddleBrown */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .formulario button:hover {
+            background-color: #6C340F; /* Darker brown on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1e6da; /* Light tan */
+            font-size: 0.9em;
+            margin-top: 40px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Marimba Chapina</h1>
+        <p>Tradición, cultura y música que vibra en el corazón de Guatemala</p>
+    </div>
+</header>
+
+<section>
+
+    <h2>Galería de Marimbas</h2>
+    <div class="gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQGyRrbGAV860ku1YvsbThpPFBK2tSHmmC-6-8oA01AO2MIeZD27wJxZX-WCkL41XZFo&usqp=CAU" alt="Marimba de concierto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKmJ1yrG92uaNFoJutU9M-2EO7gDhuCuadbMyJs9ELkniU1D1OUajF7wlyd4V35Fd9nU0&usqp=CAU" alt="Marimba pequeña">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Y3_4TjJtSjq8_BiClqZy0hySm9riD6HTtg&s" alt="Marimba grande con músicos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy0h2DAWA4dvf9IGElVreN0CiNUjLYBo-nJA&s" alt="Detalle de teclas de marimba">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Nh91mzEycfnOJbUuvjEfa15X8X5r_kzPtw&s" alt="Marimba artesanal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMceAymSKSLKf5QdOrrxrQoLAw5SnXwiLsCA&s" alt="Marimba antigua">
+    </div>
+
+    <h2>Presentación en Video</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/he-wso3DuoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="enlaces">
+        <h2>Recursos adicionales</h2>
+        <a href="https://www.youtube.com/watch?v=k_l_B3NfS7Q" target="_blank">▶️ Ver otro video de marimba en YouTube</a>
+        <a href="https://es.wikipedia.org/wiki/Marimba" target="_blank">ℹ️ Leer sobre la marimba en Wikipedia</a>
+    </div>
+
+    <div class="formulario">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="telefono">Número de teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    &copy; 2025 Marimba Chapina | Tradición que se escucha y se siente
+</footer>
+
+</body>
+</html>
